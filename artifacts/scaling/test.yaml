@@ -1,0 +1,14 @@
+apiVersion: "control.example.com/v1"
+kind: Scaling
+metadata:
+  name: test
+spec:
+  targetDeployment: test
+  minReplicas: 1
+  maxReplicas: 5
+  metricType: CPU
+  step: 1
+  scaleUp: 80
+  scaleDown: 40
+
+
